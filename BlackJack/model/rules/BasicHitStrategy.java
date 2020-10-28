@@ -2,8 +2,9 @@ package BlackJack.model.rules;
 
 import BlackJack.model.Dealer;
 import BlackJack.model.Player;
+import BlackJack.view.Visitor;
 
-class BasicHitStrategy implements IHitStrategy {
+public class BasicHitStrategy implements IHitStrategy {
     private final int g_hitLimit = 17;
     private final int g_maxScore = 21;
 

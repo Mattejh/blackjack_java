@@ -1,6 +1,7 @@
 package BlackJack;
 
 import BlackJack.model.Game;
+import BlackJack.model.rules.Factory.ComplexAmericanRuleFactory;
 import BlackJack.view.*;
 import BlackJack.controller.*;
 
@@ -10,10 +11,10 @@ public class Program
   public static void main(String[] a_args)
   {
   
-    Game g = new Game();
     IView v = new SimpleView(); //new SwedishView();
-    PlayGame ctrl = new PlayGame();
+    Game g = new Game(new ComplexAmericanRuleFactory());
+    PlayGame ctrl = new PlayGame(v,g);
     
-    while (ctrl.Play(g, v));
+    while (ctrl.Play());
   }
 }

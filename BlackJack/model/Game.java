@@ -1,14 +1,19 @@
 package BlackJack.model;
 
+import BlackJack.model.rules.Factory.AbstractFactory;
+
 public class Game {
 
   private final Dealer m_dealer;
   private final Player m_player;
 
-  public Game()
+  public Game(AbstractFactory rules)
   {
-    m_dealer = new Dealer(new BlackJack.model.rules.RulesFactory());
+    m_dealer = new Dealer();
     m_player = new Player();
+    m_dealer.setHitRule(rules.createHitStrategy());
+    m_dealer.setNewGameRule(rules.createNewGameStrategy());
+
   }
 
   public boolean IsGameOver()
@@ -33,7 +38,6 @@ public class Game {
   
   public boolean Stand()
   {
-    // TODO: Implement this according to Game_Stand.sequencediagram
     return m_dealer.Stand();
   }
   

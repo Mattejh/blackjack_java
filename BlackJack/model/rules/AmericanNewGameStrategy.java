@@ -4,8 +4,9 @@ import BlackJack.model.Card;
 import BlackJack.model.Dealer;
 import BlackJack.model.Deck;
 import BlackJack.model.Player;
+import BlackJack.view.Visitor;
 
-class AmericanNewGameStrategy implements INewGameStrategy {
+public class AmericanNewGameStrategy implements INewGameStrategy {
 
   public boolean NewGame(Deck a_deck, Dealer a_dealer, Player a_player) {
     Round(a_deck, a_player, true);

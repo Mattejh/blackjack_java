@@ -5,7 +5,7 @@ import BlackJack.view.Observer;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Observer;
+
 
 public class Player implements Observable {
 
@@ -16,7 +16,7 @@ public class Player implements Observable {
 
   public Player() {
     observers = new ArrayList<>();
-    m_hand = new LinkedList<Card>();
+    m_hand = new LinkedList<>();
     System.out.println("Hello List World");
   }
 

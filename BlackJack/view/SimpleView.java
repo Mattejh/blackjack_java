@@ -1,8 +1,7 @@
 package BlackJack.view;
 
-import BlackJack.model.Card;
-import BlackJack.model.Dealer;
-import BlackJack.model.Player;
+import BlackJack.model.*;
+import BlackJack.model.rules.*;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -82,6 +81,27 @@ public class SimpleView implements IView {
             Thread.sleep(ms);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void visitHitRule(IHitStrategy iHitStrategy) {
+        if (iHitStrategy instanceof BasicHitStrategy) {
+            System.out.print("Selected rules are basic ");
+        }
+        if (iHitStrategy instanceof ComplexHitStrategy) {
+            System.out.print( "Selected rules are complex ");
+        }
+
+    }
+
+    @Override
+    public void visitNewGameRule(INewGameStrategy iNewGameStrategy) {
+        if (iNewGameStrategy instanceof AmericanNewGameStrategy) {
+            System.out.print("American rules\n\n");
+        }
+        if (iNewGameStrategy instanceof InternationalNewGameStrategy) {
+            System.out.print("International rules\n\n");
         }
     }
 }

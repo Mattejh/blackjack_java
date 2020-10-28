@@ -2,7 +2,7 @@ package BlackJack.model;
 
 import BlackJack.model.rules.IHitStrategy;
 import BlackJack.model.rules.INewGameStrategy;
-import BlackJack.model.rules.RulesFactory;
+import BlackJack.view.Visitor;
 
 public class Dealer extends Player {
 
@@ -11,10 +11,7 @@ public class Dealer extends Player {
   private INewGameStrategy m_newGameRule;
   private IHitStrategy m_hitRule;
 
-  public Dealer(RulesFactory a_rulesFactory) {
-
-    m_newGameRule = a_rulesFactory.GetNewGameRule();
-    m_hitRule = a_rulesFactory.GetComplexHitRule();
+  public Dealer() {
 
     /*for(Card c : m_deck.GetCards()) {
       c.Show(true);
@@ -22,7 +19,21 @@ public class Dealer extends Player {
     }    */
   }
 
+  public void setNewGameRule(INewGameStrategy m_newGameRule) {
+    this.m_newGameRule = m_newGameRule;
+  }
 
+  public void setHitRule(IHitStrategy m_hitRule) {
+    this.m_hitRule = m_hitRule;
+  }
+
+  public INewGameStrategy getNewGameRule() {
+    return m_newGameRule;
+  }
+
+  public IHitStrategy getHitRule() {
+    return m_hitRule;
+  }
 
   public boolean NewGame(Player a_player) {
     if (m_deck == null || IsGameOver(a_player)) {
@@ -83,4 +94,5 @@ public class Dealer extends Player {
   public String getPlayer() {
     return dealer;
   }
+
 }

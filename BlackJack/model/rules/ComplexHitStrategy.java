@@ -3,6 +3,7 @@ package BlackJack.model.rules;
 import BlackJack.model.Card;
 import BlackJack.model.Dealer;
 import BlackJack.model.Player;
+import BlackJack.view.Visitor;
 
 public class ComplexHitStrategy implements IHitStrategy {
     private final int g_hitLimit = 17;

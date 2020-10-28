@@ -2,19 +2,18 @@ package BlackJack.model;
 
 public class Game {
 
-  private Dealer m_dealer;
-  private Player m_player;
+  private final Dealer m_dealer;
+  private final Player m_player;
 
   public Game()
   {
     m_dealer = new Dealer(new BlackJack.model.rules.RulesFactory());
     m_player = new Player();
   }
-    
-    
+
   public boolean IsGameOver()
   {
-    return m_dealer.IsGameOver();
+    return m_dealer.IsGameOver(m_player);
   }
   
   public boolean IsDealerWinner()
@@ -35,7 +34,7 @@ public class Game {
   public boolean Stand()
   {
     // TODO: Implement this according to Game_Stand.sequencediagram
-    return true;
+    return m_dealer.Stand();
   }
   
   public Iterable<Card> GetDealerHand()
@@ -57,6 +56,12 @@ public class Game {
   {
     return m_player.CalcScore();
   }
-    
-  
+
+  public Dealer getDealer() {
+    return m_dealer;
+  }
+
+  public Player getPlayer() {
+    return m_player;
+  }
 }

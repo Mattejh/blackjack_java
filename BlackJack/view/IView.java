@@ -1,11 +1,14 @@
 package BlackJack.view;
 
-public interface IView
-{
+import BlackJack.model.Dealer;
+import BlackJack.model.Player;
+
+// extends ensures all view classes must have observer methods
+public interface IView extends Observer {
   void DisplayWelcomeMessage();
   int GetInput();
   void DisplayCard(BlackJack.model.Card a_card);
-  void DisplayPlayerHand(Iterable<BlackJack.model.Card> a_hand, int a_score);
-  void DisplayDealerHand(Iterable<BlackJack.model.Card> a_hand, int a_score);
+  void DisplayPlayerHand(Player a_player);
+  void DisplayDealerHand(Dealer a_player);
   void DisplayGameOver(boolean a_dealerIsWinner);
 }

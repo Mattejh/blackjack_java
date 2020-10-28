@@ -4,6 +4,7 @@ import BlackJack.model.Card;
 import BlackJack.model.Dealer;
 import BlackJack.model.Player;
 import BlackJack.model.rules.*;
+import BlackJack.model.rules.Factory.*;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -90,23 +91,18 @@ public class SwedishView implements IView {
     }
 
     @Override
-    public void visitHitRule(IHitStrategy iHitStrategy) {
-        if (iHitStrategy instanceof BasicHitStrategy) {
-            System.out.print("Selected rules are basic ");
+    public void visitRules(AbstractFactory abstractFactory) {
+        if (abstractFactory instanceof BasicAmericanRuleFactory) {
+            System.out.println("Valda regler är grundläggande Amerikanska regler");
         }
-        if (iHitStrategy instanceof ComplexHitStrategy) {
-            System.out.print( "Selected rules are complex ");
+        if (abstractFactory instanceof ComplexAmericanRuleFactory) {
+            System.out.println("Valda regler är komplexa Amerikanska regler");
         }
-
-    }
-
-    @Override
-    public void visitNewGameRule(INewGameStrategy iNewGameStrategy) {
-        if (iNewGameStrategy instanceof AmericanNewGameStrategy) {
-            System.out.print("American rules\n\n");
+        if (abstractFactory instanceof BasicInternationalRuleFactory) {
+            System.out.println("Valda regler är grundläggande Internationella regler");
         }
-        if (iNewGameStrategy instanceof InternationalNewGameStrategy) {
-            System.out.print("International rules\n\n");
+        if (abstractFactory instanceof ComplexInternationalRuleFactory) {
+            System.out.println("Valda regler är komplexa Internationella regler");
         }
     }
 }

@@ -6,11 +6,13 @@ public class Game {
 
   private final Dealer m_dealer;
   private final Player m_player;
+  private final AbstractFactory m_factory;
 
   public Game(AbstractFactory rules)
   {
     m_dealer = new Dealer();
     m_player = new Player();
+    this.m_factory = rules;
     m_dealer.setHitRule(rules.createHitStrategy());
     m_dealer.setNewGameRule(rules.createNewGameStrategy());
 
@@ -67,5 +69,9 @@ public class Game {
 
   public Player getPlayer() {
     return m_player;
+  }
+
+  public AbstractFactory getFactory() {
+    return m_factory;
   }
 }

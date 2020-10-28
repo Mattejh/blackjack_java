@@ -2,6 +2,7 @@ package BlackJack.view;
 
 import BlackJack.model.*;
 import BlackJack.model.rules.*;
+import BlackJack.model.rules.Factory.*;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -85,23 +86,18 @@ public class SimpleView implements IView {
     }
 
     @Override
-    public void visitHitRule(IHitStrategy iHitStrategy) {
-        if (iHitStrategy instanceof BasicHitStrategy) {
-            System.out.print("Selected rules are basic ");
+    public void visitRules(AbstractFactory abstractFactory) {
+        if (abstractFactory instanceof BasicAmericanRuleFactory) {
+            System.out.println("Selected rules are basic American rules");
         }
-        if (iHitStrategy instanceof ComplexHitStrategy) {
-            System.out.print( "Selected rules are complex ");
+        if (abstractFactory instanceof ComplexAmericanRuleFactory) {
+            System.out.println("Selected rules are complex American rules");
         }
-
-    }
-
-    @Override
-    public void visitNewGameRule(INewGameStrategy iNewGameStrategy) {
-        if (iNewGameStrategy instanceof AmericanNewGameStrategy) {
-            System.out.print("American rules\n\n");
+        if (abstractFactory instanceof BasicInternationalRuleFactory) {
+            System.out.println("Selected rules are basic International rules");
         }
-        if (iNewGameStrategy instanceof InternationalNewGameStrategy) {
-            System.out.print("International rules\n\n");
+        if (abstractFactory instanceof ComplexInternationalRuleFactory) {
+            System.out.println("Selected rules are complex International rules");
         }
     }
 }

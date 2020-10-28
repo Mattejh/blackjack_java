@@ -4,7 +4,7 @@ import BlackJack.model.Game;
 import BlackJack.view.IView;
 import BlackJack.view.Visitor;
 
-public class PlayGame implements Visitable {
+public class PlayGame {
     private IView a_view;
     private Game a_game;
 
@@ -17,7 +17,7 @@ public class PlayGame implements Visitable {
 
     public boolean Play() {
         a_view.DisplayWelcomeMessage();
-        accept(a_view);
+        a_view.visitRules(a_game.getFactory());
 
         a_view.DisplayPlayerHand(a_game.getPlayer());
         a_view.DisplayDealerHand(a_game.getDealer());
@@ -39,9 +39,4 @@ public class PlayGame implements Visitable {
         return input != 'q';
     }
 
-    @Override
-    public void accept(Visitor visitor) {
-        visitor.visitHitRule(a_game.getDealer().getHitRule());
-        visitor.visitNewGameRule(a_game.getDealer().getNewGameRule());
-    }
 }

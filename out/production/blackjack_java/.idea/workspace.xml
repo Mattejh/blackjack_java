@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="885528fc-409c-4123-ac0c-f04d1c7d420c" name="Default Changelist" comment="grade 2">
+      <change afterPath="$PROJECT_DIR$/BlackJack/model/rules/Factory/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/AmericanNewGameStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/AmericanNewGameStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/BasicHitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/BasicHitStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/ComplexHitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/ComplexHitStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/IHitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/IHitStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/INewGameStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/INewGameStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/InternationalNewGameStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/model/rules/InternationalNewGameStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/model/rules/RulesFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/view/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/view/IView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/view/SimpleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/view/SimpleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJack/view/SwedishView.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJack/view/SwedishView.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="grade_2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jVFkAX2fdVRDXtwE1k4p97qoQC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BlackJack/view" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="BlackJack.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BlackJack/view" />
+      <recent name="$PROJECT_DIR$/BlackJack/model" />
+      <recent name="$PROJECT_DIR$/BlackJack/model/rules" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BlackJack.Program" />
+      <module name="blackjack_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BlackJack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Program" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="885528fc-409c-4123-ac0c-f04d1c7d420c" name="Default Changelist" comment="" />
+      <created>1603881493029</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603881493029</updated>
+      <workItem from="1603881494083" duration="9623000" />
+    </task>
+    <task id="LOCAL-00001" summary="grade 2">
+      <created>1603881632404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603881632404</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="grade 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="grade 2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1884" y="1101" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1603911084087">
+      <screen x="1080" y="840" width="1920" height="1080" />
+    </state>
+    <state x="1884" y="1101" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/1080.840.1920.1080/0.867.1080.1053@1080.840.1920.1080" timestamp="1603911084087" />
+    <state x="1809" y="1142" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603893720374">
+      <screen x="1080" y="840" width="1920" height="1080" />
+    </state>
+    <state x="1809" y="1142" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1080.840.1920.1080/0.867.1080.1053@1080.840.1920.1080" timestamp="1603893720374" />
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1603910314765">
+      <screen x="1080" y="840" width="1920" height="1080" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/1080.840.1920.1080/0.867.1080.1053@1080.840.1920.1080" timestamp="1603910314765" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1603910314765">
+      <screen x="1080" y="840" width="1920" height="1080" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.center/1080.840.1920.1080/0.867.1080.1053@1080.840.1920.1080" timestamp="1603910314765" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1603910314765">
+      <screen x="1080" y="840" width="1920" height="1080" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.left/1080.840.1920.1080/0.867.1080.1053@1080.840.1920.1080" timestamp="1603910314765" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1603910314765">
+      <screen x="1080" y="840" width="1920" height="1080" />
+    </state>
+    <state width="1802" height="275" key="GridCell.Tab.0.right/1080.840.1920.1080/0.867.1080.1053@1080.840.1920.1080" timestamp="1603910314765" />
+    <state x="1671" y="1129" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603881636355">
+      <screen x="1080" y="840" width="1920" height="1080" />
+    </state>
+    <state x="1671" y="1129" width="800" height="535" key="Vcs.Push.Dialog.v2/1080.840.1920.1080/0.867.1080.1053@1080.840.1920.1080" timestamp="1603881636355" />
+  </component>
+</project>

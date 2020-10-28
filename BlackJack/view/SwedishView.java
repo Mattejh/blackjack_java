@@ -93,16 +93,16 @@ public class SwedishView implements IView {
     @Override
     public void visitRules(AbstractFactory abstractFactory) {
         if (abstractFactory instanceof BasicAmericanRuleFactory) {
-            System.out.println("Valda regler är grundläggande Amerikanska regler");
+            System.out.println("Valda regler är grundläggande Amerikanska regler\n");
         }
         if (abstractFactory instanceof ComplexAmericanRuleFactory) {
-            System.out.println("Valda regler är komplexa Amerikanska regler");
+            System.out.println("Valda regler är komplexa Amerikanska regler\n");
         }
         if (abstractFactory instanceof BasicInternationalRuleFactory) {
-            System.out.println("Valda regler är grundläggande Internationella regler");
+            System.out.println("Valda regler är grundläggande Internationella regler\n");
         }
         if (abstractFactory instanceof ComplexInternationalRuleFactory) {
-            System.out.println("Valda regler är komplexa Internationella regler");
+            System.out.println("Valda regler är komplexa Internationella regler\n");
         }
     }
 }

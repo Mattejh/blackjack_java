@@ -88,16 +88,16 @@ public class SimpleView implements IView {
     @Override
     public void visitRules(AbstractFactory abstractFactory) {
         if (abstractFactory instanceof BasicAmericanRuleFactory) {
-            System.out.println("Selected rules are basic American rules");
+            System.out.println("Selected rules are basic American rules\n");
         }
         if (abstractFactory instanceof ComplexAmericanRuleFactory) {
-            System.out.println("Selected rules are complex American rules");
+            System.out.println("Selected rules are complex American rules\n");
         }
         if (abstractFactory instanceof BasicInternationalRuleFactory) {
-            System.out.println("Selected rules are basic International rules");
+            System.out.println("Selected rules are basic International rules\n");
         }
         if (abstractFactory instanceof ComplexInternationalRuleFactory) {
-            System.out.println("Selected rules are complex International rules");
+            System.out.println("Selected rules are complex International rules\n");
         }
     }
 }

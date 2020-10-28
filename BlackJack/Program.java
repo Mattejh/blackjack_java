@@ -11,8 +11,8 @@ public class Program
   public static void main(String[] a_args)
   {
   
-    IView v = new SimpleView(); //new SwedishView();
     Game g = new Game(new ComplexAmericanRuleFactory());
+    IView v = new SimpleView(); //new SwedishView();
     PlayGame ctrl = new PlayGame(v,g);
     
     while (ctrl.Play());

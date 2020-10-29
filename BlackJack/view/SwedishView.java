@@ -71,10 +71,11 @@ public class SwedishView implements IView {
         System.out.println(a_player.getPlayer() + " Har: ");
         for (Card c : a_hand) {
             DisplayCard(c);
+            hold(2000);
         }
         System.out.println("Poäng: " + a_player.CalcScore());
         System.out.println("");
-
+        hold(1000);
     }
 
 
@@ -85,6 +86,14 @@ public class SwedishView implements IView {
         }
         else {
             this.a_PlayerHand = args;
+        }
+    }
+
+    public void hold(int ms) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

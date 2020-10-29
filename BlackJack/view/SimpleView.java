@@ -47,14 +47,13 @@ public class SimpleView implements IView {
 
     private void DisplayHand(Iterable<Card> a_hand, Player a_player) {
         System.out.println(a_player.getPlayer() + " Has: ");
-        // wait(1000);
         for (Card c : a_hand) {
-          //  wait(1000);
             DisplayCard(c);
+            hold(2000);
         }
-        // wait(500);
         System.out.println("Score: " + a_player.CalcScore());
         System.out.println("");
+        hold(1000);
 
     }
 
@@ -77,7 +76,8 @@ public class SimpleView implements IView {
             this.a_PlayerHand = args;
         }
     }
-    public void wait(int ms) {
+
+    public void hold(int ms) {
         try {
             Thread.sleep(ms);
         } catch (InterruptedException e) {
